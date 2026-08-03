@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications — Sydney University Law Society</title>
+  <meta name="description" content="Stage 1 wireframe cloning the SULS Publications page styling for The Brief podcast site." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== Announcement bar ===================== -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__inner">
+      <a href="https://suls.org.au/register">Sign up here</a>
+      <span>to be a SULS Member to get the latest Law School news</span>
+    </div>
+    <button class="announcement-bar__close" aria-label="Close Announcement" type="button">&times;</button>
+  </div>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="https://www.suls.org.au/" aria-label="Sydney University Law Society — Home">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/1576634899871-HGJH9IUSC61M542THWVB/SULS+Logo+Horizontal+%28Blue%2C+Transparent+Background%29.png?format=1500w"
+          alt="Sydney University Law Society"
+        />
+      </a>
+
+      <!-- Desktop inline nav (titles only — mirrors live site's page titles) -->
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#">About SULS</a>
+        <a href="#">Support</a>
+        <a href="#">Education</a>
+        <a href="#">Careers</a>
+        <a href="#">Social Justice</a>
+        <a href="#">Competitions</a>
+        <a href="#" class="is-current" aria-current="page">Publications</a>
+        <a href="#">More Portfolios</a>
+      </nav>
+
+      <div class="site-header__social">
+        <a href="https://instagram.com/suls_sydney/" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a href="https://facebook.com/sydneyuniversitylawsociety" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M13.5 21v-8.5h2.8l.4-3.3h-3.2V7.2c0-.95.27-1.6 1.63-1.6h1.74V2.65C15.93 2.55 15 2.5 13.9 2.5c-2.7 0-4.55 1.65-4.55 4.68v2.02H6.5v3.3h2.85V21h4.15z" />
+          </svg>
+        </a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open Menu">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== Full-screen nav overlay ===================== -->
+  <nav class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay__header container">
+      <a class="site-header__logo" href="https://www.suls.org.au/" aria-label="Sydney University Law Society — Home">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/1576634899871-HGJH9IUSC61M542THWVB/SULS+Logo+Horizontal+%28Blue%2C+Transparent+Background%29.png?format=1500w"
+          alt="Sydney University Law Society"
+        />
+      </a>
+      <button class="menu-toggle" type="button" data-nav-close aria-label="Close Menu">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+    </div>
+
+    <ul class="nav-overlay__list">
+      <li>
+        <details class="nav-overlay__item">
+          <summary>About SULS <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/what-is-suls">What is SULS?</a></li>
+            <li><a href="https://www.suls.org.au/presidents-welcome">President's Welcome</a></li>
+            <li><a href="https://www.suls.org.au/executive">2026 Executive Team</a></li>
+            <li><a href="https://www.suls.org.au/governance">Governance</a></li>
+            <li><a href="https://www.suls.org.au/elections">Elections</a></li>
+            <li><a href="https://www.suls.org.au/contact-us">Contact Us</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item">
+          <summary>Support <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/student-support-services">Student Support Services</a></li>
+            <li><a href="https://www.suls.org.au/mental-health-wellbeing">Mental Health &amp; Wellbeing</a></li>
+            <li><a href="https://www.suls.org.au/equity-initiatives">Equity Initiatives</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item">
+          <summary>Education <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/education-programs">Education Programs</a></li>
+            <li><a href="https://www.suls.org.au/online-textbook-exchange">Online Textbook Exchange</a></li>
+            <li><a href="https://www.suls.org.au/tutoring-database">Tutoring Database</a></li>
+            <li><a href="https://www.suls.org.au/student-advocacy">Student Advocacy</a></li>
+            <li><a href="https://www.suls.org.au/event-recordings">Event Recordings</a></li>
+            <li><a href="https://www.suls.org.au/intensive-units-2025">2025 Intensive Units</a></li>
+            <li><a href="https://www.suls.org.au/subject-faq">Subject FAQ</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item">
+          <summary>Careers <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/careers-mentoring-program">Careers Mentoring Program</a></li>
+            <li><a href="https://www.suls.org.au/careers-presentations">Careers Presentations</a></li>
+            <li><a href="http://www.suls.org.au/jobs-board">Jobs Board</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item">
+          <summary>Social Justice <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/social-justice-general-information">General Information</a></li>
+            <li><a href="https://www.suls.org.au/juvenile-justice-mentoring-program">Juvenile Justice Mentoring Program</a></li>
+            <li><a href="https://www.suls.org.au/social-justice-resources">Social Justice Resources</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item">
+          <summary>Competitions <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/about-competitions">About Competitions</a></li>
+            <li><a href="https://www.suls.org.au/internal-competitions">Internal Competitions</a></li>
+            <li><a href="https://www.suls.org.au/intervarsity-competitions">Intervarsity Competitions</a></li>
+            <li><a href="https://www.suls.org.au/international-competitions">International Competitions</a></li>
+            <li><a href="https://www.suls.org.au/educational-programs">Educational Programs</a></li>
+            <li><a href="https://www.suls.org.au/womens-mooting-program">Women's Mooting Program</a></li>
+            <li><a href="https://www.suls.org.au/competitions-resources-faq">Competitions Resources &amp; FAQ</a></li>
+            <li><a href="https://www.suls.org.au/national-womens-moot">National Women's Moot</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item nav-overlay__item--current" open>
+          <summary>Publications <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/publications">Journals and Guides</a></li>
+            <li><a href="https://www.suls.org.au/archived-publications">Archive</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-overlay__item">
+          <summary>More Portfolios <span class="chevron">&rsaquo;</span></summary>
+          <ul class="nav-overlay__sublist">
+            <li><a href="https://www.suls.org.au/campus">Campus</a></li>
+            <li><a href="https://www.suls.org.au/disabilities">Disabilities</a></li>
+            <li><a href="https://www.suls.org.au/ethnocultural">Ethnocultural</a></li>
+            <li><a href="https://www.suls.org.au/first-nations">First Nations</a></li>
+            <li><a href="https://www.suls.org.au/international">International</a></li>
+            <li><a href="https://www.suls.org.au/queer">Queer</a></li>
+            <li><a href="https://www.suls.org.au/socials">Socials</a></li>
+            <li><a href="https://www.suls.org.au/sport">Sport</a></li>
+            <li><a href="https://www.suls.org.au/womens">Women's</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+
+    <div class="nav-overlay__social">
+      <a href="https://www.facebook.com/SydneyUniversityLawSociety/">Facebook</a>
+      <a href="http://instagram.com/suls_sydney">Instagram</a>
+    </div>
+  </nav>
+
+  <main id="page">
+
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <h1 class="hero__heading">Publications</h1>
+
+          <div class="hero__copy">
+            <p>
+              Publications is a central portfolio within SULS, providing students with opportunities to engage critically and creatively with law and public policy. The portfolio encompasses a range of student-led initiatives, including academic and creative journals, practical guides, and <em>The Brief</em> podcast. Together, these platforms showcase diverse forms of legal writing and discussion, from rigorous scholarly analysis to accessible, student-focused commentary and creative pieces. Students are encouraged to get involved as editors or contributors, whether by working on a journal or guide, contributing written pieces, or participating in podcast initiatives.
+            </p>
+            <p>
+              Students interested in editing, contributing or engaging further can keep up to date on social media, on <a href="https://linktr.ee/sulspublications" target="_blank" rel="noopener">https://linktr.ee/sulspublications</a> or contact the Publications Director at publications@suls.org.au for further information
+            </p>
+          </div>
+
+          <div class="hero__image">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/1581221769172-4BQXZCMB8F3RPXUT74RO/undraw_bookshelves_xekd+%281%29.png?format=1500w"
+              alt="Illustration of a woman standing in front of a bookshelf, holding a folder"
+            />
+          </div>
+        </div>
+
+        <hr class="hero__divider" />
+      </div>
+    </section>
+
+    <!-- ===================== Guide cards ===================== -->
+    <section class="guides">
+      <div class="container guides__grid">
+
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://drive.google.com/file/d/17Yx9ZYc3DfUa0jE269OTaaHIbG1uGMYD/view?usp=drivesdk" target="_blank" rel="noopener">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/65e4d221-7cc1-40c8-8d10-fd3bb8fe67a4/%5BONLINE%5D+V2+FINAL+2026+CAREERS+GUIDE+%28dragged%29+copy.png?format=750w"
+              alt="2026 Careers Guide cover"
+            />
+          </a>
+          <h2 class="guide-card__title">
+            <a href="https://drive.google.com/file/d/17Yx9ZYc3DfUa0jE269OTaaHIbG1uGMYD/view?usp=drivesdk" target="_blank" rel="noopener">2026 Careers Guide</a>
+          </h2>
+        </article>
+
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://drive.google.com/file/d/1I8lURXQbilBYLJkeVV4TNtRJijf2QJuu/view?usp=drivesdk" target="_blank" rel="noopener">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/b4379873-165d-433a-9de3-fa6edf585019/2026+EDUCATION+GUIDE+%28ONLINE%29+%28dragged%29+copy+2.png?format=750w"
+              alt="2026 Education Guide cover"
+            />
+          </a>
+          <h2 class="guide-card__title">
+            <a href="https://drive.google.com/file/d/1I8lURXQbilBYLJkeVV4TNtRJijf2QJuu/view?usp=drivesdk" target="_blank" rel="noopener">2026 Education Guide</a>
+          </h2>
+        </article>
+
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://drive.google.com/file/d/1qGXNE_MQ0lJYoYq4J8Fpb1_JXoP2myPy/view?usp=drivesdk" target="_blank" rel="noopener">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/7c77a51b-f139-4b23-8fb1-6be598c97906/%5BONLINE%5D+2026+ISG+%28dragged%29+copy.png?format=750w"
+              alt="2026 International Student's Guide cover"
+            />
+          </a>
+          <h2 class="guide-card__title">
+            <a href="https://drive.google.com/file/d/1qGXNE_MQ0lJYoYq4J8Fpb1_JXoP2myPy/view?usp=drivesdk" target="_blank" rel="noopener">2026 International Student&rsquo;s Guide</a>
+          </h2>
+        </article>
+
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://drive.google.com/file/d/1VDFnT6SlvAHFSTiMohLtUfAs-b-wB2WN/view?usp=drivesdk" target="_blank" rel="noopener">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/96583912-d489-46ac-87cc-9d547f859b2a/FYG+FINAL_digital+copy+%28dragged%29+copy.png?format=750w"
+              alt="2026 First Year Guide cover"
+            />
+          </a>
+          <h2 class="guide-card__title">
+            <a href="https://drive.google.com/file/d/1VDFnT6SlvAHFSTiMohLtUfAs-b-wB2WN/view?usp=drivesdk" target="_blank" rel="noopener">2026 First Year Guide</a>
+          </h2>
+        </article>
+
+        <article class="guide-card guide-card--no-link">
+          <div class="guide-card__image">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/574a8854e707eb4fe69d75b4/bce1ee2c-5967-4c20-bdf4-fc7d6a1b8d93/COMPS+HANDBOOK+2026+FINAL+%28ONLINE%29+%28dragged%29+copy.png?format=750w"
+              alt="2026 Competitions Handbook cover"
+            />
+          </div>
+          <h2 class="guide-card__title">2026 Competitions Handbook</h2>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__social">
+        <a href="https://facebook.com/sydneyuniversitylawsociety">Facebook</a>
+        <a href="https://instagram.com/suls_sydney/">Instagram</a>
+        <a href="https://twitter.com/SULS_Sydney">Twitter</a>
+        <a href="https://sulsstore.square.site/">Store</a>
+      </div>
+      <p class="site-footer__org">Sydney University Law Society Inc.</p>
+      <p class="site-footer__est">Est 1902.</p>
+      <p class="site-footer__address">
+        Come say hi to us in our office! We&rsquo;re located in<br />
+        Room 103, New Law School Building (F10)<br />
+        Eastern Avenue, The University of Sydney, NSW 2006 Australia
+      </p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
