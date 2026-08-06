@@ -191,11 +191,11 @@
     <section class="hero">
       <div class="container">
         <div class="hero__grid">
-          <h1 class="hero__heading">Our Podcast: The Brief</h1>
+          <h1 class="hero__heading">The Brief</h1>
 
           <div class="hero__copy">
             <p>
-              <em>The Brief</em> is a Sydney University Law Society podcast dedicated to exploring non-traditional legal pathways. Every episode, we spotlight the incredible story of a guest, sharing candid conversations about careers within, outside and adjacent to the law.
+              <em>The Brief</em> is Sydney University Law Society&rsquo;s flagship careers podcast dedicated to exploring non-traditional legal pathways. Each episode, we spotlight the incredible story of a guest who reflects on and shares their own experiences navigating a career within, outside or adjacent to law.
             </p>
             <p>
               Join us weekly to travel down the road less litigated. Episodes drop at 10am every Friday on Spotify.
@@ -235,22 +235,38 @@
       </div>
     </section>
 
-    <!-- ===================== Concept trailer ===================== -->
-    <section class="concept-trailer">
+    <!-- ===================== Concept film ===================== -->
+    <section class="concept-film">
       <div class="container">
-        <h2 class="concept-trailer__heading">Concept Trailer</h2>
+        <h2 class="concept-film__heading">Concept Film: The Road Less Litigated</h2>
 
-        <div class="concept-trailer__video">
+        <div class="concept-film__video">
           <iframe
-            class="concept-trailer__placeholder"
+            class="concept-film__placeholder"
             src="https://drive.google.com/file/d/1e4Op0ki8pjLblRhQFEPWClUAeuz6RMqw/preview"
-            title="The Brief concept trailer"
+            title="The Brief concept film"
             allow="autoplay"
             allowfullscreen
           ></iframe>
         </div>
 
-        <hr class="concept-trailer__divider" />
+        <p class="concept-film__description">
+          This short film encapsulates our podcast's vision, celebrating the multiple paths that diverge from the crossroads of finishing law school and all the roads that are less litigated.
+        </p>
+
+        <div class="concept-film__credits">
+          <p class="concept-film__credits-heading">Credits:</p>
+          <ul class="concept-film__credits-list">
+            <li><span class="concept-film__credits-role">Director:</span> Katie Ord</li>
+            <li><span class="concept-film__credits-role">Writers:</span> Katie Ord and Metilda You</li>
+            <li><span class="concept-film__credits-role">Editor:</span> Carson Proutt</li>
+            <li><span class="concept-film__credits-role">Cinematographer:</span> Zac Wong</li>
+            <li><span class="concept-film__credits-role">Composer:</span> Michael Hue with additional song by The Foundations</li>
+            <li><span class="concept-film__credits-role">Talent:</span> Katie Ord, Carson Proutt, Michael Hue, Daphne Tian, Elsa Lane, Anika Jamieson, Ruvindi Jayakody and Metilda You</li>
+          </ul>
+        </div>
+
+        <hr class="concept-film__divider" />
       </div>
     </section>
 
@@ -259,19 +275,55 @@
       <div class="container">
         <h2 class="latest-episodes__heading">Our Latest Episodes</h2>
 
-        <article class="episode-card episode-card--featured">
-          <a
-            class="episode-card__image"
-            href="https://open.spotify.com/episode/PLACEHOLDER"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="the-brief-on-isabelle-reinecke.png"
-              alt="The Brief on Isabelle Reinecke episode artwork"
-            />
-          </a>
-          <div class="episode-card__body">
+        <!-- Featured episode template (Episode 0) — hidden from public.
+             To feature an episode: copy the <article> below out of <template> and fill in real content. -->
+        <template id="featured-episode-template">
+          <article class="episode-card episode-card--featured">
+            <a
+              class="episode-card__image episode-card__image--placeholder"
+              href="https://open.spotify.com/episode/PLACEHOLDER"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Episode 0 placeholder"
+            ></a>
+            <div class="episode-card__body">
+              <p class="episode-card__meta">
+                Episode 0 &middot; <time datetime="2026-03-15">15 Mar 2026</time>
+              </p>
+              <h3 class="episode-card__title">
+                <a href="https://open.spotify.com/episode/PLACEHOLDER" target="_blank" rel="noopener noreferrer">The Brief on &hellip;</a>
+              </h3>
+              <p class="episode-card__description">
+                Placeholder episode card. Replace with Episode 0 artwork, title and description when ready.
+              </p>
+              <p class="episode-card__description">
+                Additional paragraph for the featured layout. Keep or replace as needed.
+              </p>
+              <blockquote class="episode-card__quote">
+                <span class="episode-card__quote-line">
+                  &ldquo;Quote line one,
+                </span>
+                <span class="episode-card__quote-line episode-card__quote-line--stagger">
+                  quote line two.&rdquo;
+                </span>
+              </blockquote>
+            </div>
+          </article>
+        </template>
+
+        <div class="episodes__grid">
+          <article class="episode-card">
+            <a
+              class="episode-card__image"
+              href="https://open.spotify.com/episode/PLACEHOLDER"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="the-brief-on-isabelle-reinecke.png"
+                alt="The Brief on Isabelle Reinecke episode artwork"
+              />
+            </a>
             <p class="episode-card__meta">
               Episode 3 &middot; <time datetime="2026-08-07">7 Aug 2026</time>
             </p>
@@ -279,26 +331,10 @@
               <a href="https://open.spotify.com/episode/PLACEHOLDER" target="_blank" rel="noopener noreferrer">The Brief on Isabelle Reinecke</a>
             </h3>
             <p class="episode-card__description">
-              Isabelle Reinecke is the founder and Executive Director of Grata Fund, a leading not-for-profit driving strategic litigation to advance human rights, climate action and democratic freedoms across Australia.
+              Isabelle Reinecke reflects on founding Grata Fund and leading strategic litigation to advance human rights, climate action and democratic freedoms across Australia, and how purpose-driven leadership can use the law as a tool for lasting social change.
             </p>
-            <p class="episode-card__description">
-              Isabelle has led collaborations between leading legal experts, community advocates and civil society organisations to challenge systemic injustice, helping shape landmark cases on issues ranging from offshore refugee detention to housing for remote First Nations communities.
-            </p>
-            <p class="episode-card__description">
-              A Churchill Fellow and recipient of the 2022 Women&rsquo;s Agenda Emerging NFP Leader Award, Isabelle is a passionate advocate for using the law as a tool for social change. Her career is a powerful example of how purpose-driven leadership, and a willingness to challenge the status quo can create lasting impact.
-            </p>
-            <blockquote class="episode-card__quote">
-              <span class="episode-card__quote-line">
-                &ldquo;Law is everywhere, and affects everything,
-              </span>
-              <span class="episode-card__quote-line episode-card__quote-line--stagger">
-                even though it may be invisible.&rdquo;
-              </span>
-            </blockquote>
-          </div>
-        </article>
+          </article>
 
-        <div class="episodes__grid">
           <article class="episode-card">
             <a
               class="episode-card__image"
@@ -342,25 +378,6 @@
             </h3>
             <p class="episode-card__description">
               Professor Doug Jones reflects on his path through law school, the decisions that shaped his future, and how he discovered a passion for a field that would ultimately take him around the world.
-            </p>
-          </article>
-
-          <article class="episode-card">
-            <a
-              class="episode-card__image episode-card__image--placeholder"
-              href="https://open.spotify.com/episode/PLACEHOLDER"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Episode 0 placeholder"
-            ></a>
-            <p class="episode-card__meta">
-              Episode 0 &middot; <time datetime="2026-08-07">7 Aug 2026</time>
-            </p>
-            <h3 class="episode-card__title">
-              <a href="https://open.spotify.com/episode/PLACEHOLDER" target="_blank" rel="noopener noreferrer">The Brief on &hellip;</a>
-            </h3>
-            <p class="episode-card__description">
-              Placeholder episode card to complete the grid. Replace with Episode 0 artwork, title and description when ready.
             </p>
           </article>
         </div>

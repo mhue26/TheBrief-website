@@ -532,17 +532,17 @@ body.nav-open {
   margin: clamp(2rem, 6vw, 4rem) 0 0;
 }
 
-/* Concept trailer section */
-.concept-trailer {
+/* Concept film section */
+.concept-film {
   padding-top: clamp(1.5rem, 3vw, 2rem);
   padding-bottom: 0;
 }
 
-.concept-trailer__heading {
+.concept-film__heading {
   margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.concept-trailer__video {
+.concept-film__video {
   width: min(75%, 900px);
   margin-inline: auto;
   aspect-ratio: 16 / 9;
@@ -550,13 +550,48 @@ body.nav-open {
   overflow: hidden;
 }
 
-.concept-trailer__placeholder {
+.concept-film__placeholder {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.concept-trailer__divider {
+.concept-film__description {
+  width: min(75%, 900px);
+  margin: clamp(1.25rem, 2.5vw, 2rem) auto 0;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-body);
+  text-align: center;
+}
+
+.concept-film__credits {
+  width: min(75%, 900px);
+  margin: clamp(1.5rem, 3vw, 2.5rem) auto 0;
+  font-family: var(--font-body);
+  font-size: var(--size-small, 0.9375rem);
+  color: var(--color-body);
+  text-align: center;
+}
+
+.concept-film__credits-heading {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.concept-film__credits-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.concept-film__credits-role {
+  font-weight: 600;
+}
+
+.concept-film__divider {
   border: none;
   border-top: 1px solid var(--color-heading);
   margin: clamp(2rem, 6vw, 4rem) 0 0;
@@ -775,7 +810,7 @@ body.nav-open {
     order: 2;
   }
 
-  .concept-trailer__video {
+  .concept-film__video {
     width: 100%;
     margin-inline: 0;
     border-radius: 12px;
